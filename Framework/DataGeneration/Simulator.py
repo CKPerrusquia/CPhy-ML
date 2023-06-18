@@ -34,7 +34,7 @@ plt.rcParams['text.usetex'] = True
 sns.set_style('white')
 
 class FlightSimulation:
-    def simulate_flight(self, flight_filename, data_dir, noise_factor=1.0, velocity_coef=0.5, 
+    def simulate_flight(self, flight_filename, index, data_dir, noise_factor=1.0, velocity_coef=0.5, 
                     offset_x=0, offset_y=0, show_radar=False, figsize=(10,6)):
         
         """ Simulate radar measurements based on ground-truth
@@ -161,6 +161,8 @@ class FlightSimulation:
             ax1.set_ylim(min([-10.0, min(meas_Y) - 20.0]))
         ax1.legend()
         ax1.grid(0.5)
+        model_name = f"f{index}.eps"
+        ax1.figure.savefig(model_name, format='eps', bbox_inches = 'tight', dpi=1200)
 
         fig = plt.figure(figsize=figsize)
         ax2 = fig.add_subplot(1,1,1)
@@ -178,6 +180,8 @@ class FlightSimulation:
             ax2.set_ylim(min([-10.0, min(meas_Y) - 20.0]))
         ax2.legend()
         ax2.grid(0.5)
+        model_name = f"g{index}.eps"
+        ax2.figure.savefig(model_name, format='eps', bbox_inches = 'tight', dpi=1200)
         plt.show()
     
         fig = plt.figure(figsize=figsize)
@@ -186,6 +190,8 @@ class FlightSimulation:
         ax2.plot(est_Z, 'r.', label='Est z', markerfacecolor='None')
         ax2.tick_params(axis='x', labelsize = 16)
         ax2.tick_params(axis='y', labelsize = 16)
+        model_name = f"h{index}.eps"
+        ax2.figure.savefig(model_name, format='eps', bbox_inches = 'tight', dpi=1200)
         plt.show()
         
     def get_simulated_flight_df(self, flight_filename, data_dir, 

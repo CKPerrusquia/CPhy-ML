@@ -101,7 +101,8 @@ class Results:
     
             best_val = temp_df['root_mean_squared_error'].min()
             best_mins.append(best_val)
-      
+            
+        plt.savefig('RMSEDMoE.eps', format='eps', bbox_inches = 'tight', dpi=1200)
         plt.show()
         return
     
@@ -149,6 +150,7 @@ class Results:
             best_val = temp_df['val_root_mean_squared_error'].min()
             best_mins.append(best_val)
         plt.tight_layout()
+        plt.savefig('RMSDMoE.eps', format='eps', bbox_inches = 'tight', dpi=1200)
         plt.show()
         return
     

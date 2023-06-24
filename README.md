@@ -22,8 +22,9 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
   - `OutputStandardiser.py` Standardize the outputs for regression purposes.
   - `Simulator.py` Simulate flights in accordance with the location of the radar and noise intensity.
   - `Standardiser.py` Basic class to transform the input trajectories into adequate input data.
+    
 -  HybridClassifier
-  - `Attention_Layer.py`
+    - `Attention_Layer.py`
 
 
 

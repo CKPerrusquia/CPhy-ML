@@ -15,13 +15,13 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
 
 ## Framework description
 - DataGeneration
-  - `DataPreprocessing.py`
-  - `Initiator.py`
-  - `MyDeleter.py`
-  - `OffsetCoordinates.py`
-  - `OutputStandardiser.py`
-  - `Simulator.py`
-  - `Standardiser.py`
+  - `DataPreprocessing.py` Methods to preprocess the input trajectories and split the data.
+  - `Initiator.py` Basic Initiator for simulating radar measurements.
+  - `MyDeleter.py` Method to delete tracks that are not useful.
+  - `OffsetCoordinates.py` To move the ground truth trajectories with respect to the location of the radar.
+  - `OutputStandardiser.py` Standardize the outputs for regression purposes.
+  - `Simulator.py` Simulate flights in accordance with the location of the radar and noise intensity.
+  - `Standardiser.py` Basic class to transform the input trajectories into adequate input data.
 -  HybridClassifier
   - `Attention_Layer.py`
   - `CLSTM_Attention_Classifier.py`

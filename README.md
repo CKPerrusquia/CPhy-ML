@@ -15,4 +15,4 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
 
 ## Framework description
 - Classifier
-  - 'torch'
+  - `ola`

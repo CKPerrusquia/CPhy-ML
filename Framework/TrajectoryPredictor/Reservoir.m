@@ -22,12 +22,12 @@ global T
 rng(800);
 
 % Prediction time window
-ft = 100;   % Number of steps for prediction ft<length(X)
+ft = 1;   % Number of steps for prediction ft: 1, 10, 100, 1000
 T = 0.02;    % Sampling time
 
 % Load the data from the Periodic Folder
 % Non-periodic trajectories are not suitable to RC methods
-load('Experiment_Data/Periodic/X_tray_10.mat', 'X');
+load('MatlabResearchData/Periodic/X_tray_1.mat', 'X');
 
 % Add some noise to the trajectories to model sensor noise
 Xnoise = X + 1e-1*std(X,[],'all').*randn(size(X));

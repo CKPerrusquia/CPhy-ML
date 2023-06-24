@@ -14,5 +14,30 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
 - scikit-learn 1.2.2
 
 ## Framework description
-- Classifier
-  - `ola`
+- DataGeneration
+  - `DataPreprocessing.py`
+  - `Initiator.py`
+  - `MyDeleter.py`
+  - `OffsetCoordinates.py`
+  - `OutputStandardiser.py`
+  - `Simulator.py`
+  - `Standardiser.py`
+-  HybridClassifier
+  - `Attention_Layer.py`
+  - `CLSTM_Attention_Classifier.py`
+  - `CLSTM_Autoencoder.py`
+  - `ConvLSTM_Classifier.py`
+  - `Convolutional_Autoencoder.py`
+  - `Convolutional_Classifier.py`
+  - `Convolutional_Classifier_Autoencoder.py`
+  - `GRU_Classifier.py`
+  - `RandomForest_Classifier.py`
+  - `Transformer_Classifier.py`
+  - `Visualization.py`
+-  TrajectoryRegression
+  - `CLSTM_Regressor.py`
+  - `CNN_Regressor.py`
+  - `LSTM_Regressor.py`
+  - `Linear_Regressor.py`
+  - `MoE.py`
+  - `Visualization.py`

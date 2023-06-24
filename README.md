@@ -45,7 +45,7 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
     - `Visualization.py` Basic class to visualise the results of the regression models and trajectory bounds
 
 ## Data
-The `ResearchData` folder contains the data relevant for the research. The complete datasets can be downloaded from
+The `ResearchData` folder contains the data collected from open access sources that are relevant for the research. The complete datasets can be downloaded from
 > Jason Whelan, Thanigajan Sangarapillai, Omar Minawi, Abdulaziz Almehmadi, Khalil El-Khatib, February 26, 2020, "UAV Attack Dataset", IEEE Dataport, doi: https://dx.doi.org/10.21227/00dg-0d12.
 
 > Keipour, Azarakhsh; Mousaei, Mohammadreza; Scherer, Sebastian, 2020, "ALFA: A Dataset for UAV Fault and Anomaly Detection". Carnegie Mellon University. Dataset. https://doi.org/10.1184/R1/12707963.v1
@@ -53,6 +53,8 @@ The `ResearchData` folder contains the data relevant for the research. The compl
 > M. Street, 2021, “Drone identification and tracking,” 2021. Dataset. https://kaggle.com/competitions/icmcis-drone-tracking
 
 > Rodrigues, Thiago A.; Patrikar, Jay; Choudhry, Arnav; Feldgoise, Jacob; Arcot, Vaibhav; Gahlaut, Aradhana; et al., 2020, "Data Collected with Package Delivery Quadcopter Drone". Carnegie Mellon University. Dataset. https://doi.org/10.1184/R1/12683453.v1
+
+The `Matlab_ResearchData`contains custom flight data using a personal use drone. 
 
 ## Usage
 1. Run the notebook `Synthetic_Data_Generation.ipynb` to generate synthetic data from `ResearchData`.

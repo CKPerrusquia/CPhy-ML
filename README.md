@@ -24,22 +24,30 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
   - `Standardiser.py` Basic class to transform the input trajectories into adequate input data.
     
 -  HybridClassifier
-    - `Attention_Layer.py`
-    - `CLSTM_Attention_Classifier.py`
-    - `CLSTM_Autoencoder.py`
-    - `ConvLSTM_Classifier.py`
-    - `Convolutional_Autoencoder.py`
-    - `Convolutional_Classifier.py`
-    - `Convolutional_Classifier_Autoencoder.py`
-    - `GRU_Classifier.py`
-    - `RandomForest_Classifier.py`
-    - `Transformer_Classifier.py`
-    - `Visualization.py`
+    - `Attention_Layer.py` Custom Attention Layer for the neural classifiers
+    - `CLSTM_Attention_Classifier.py` Custom Convolutional Bidirectional LSTM with Attention Classifier
+    - `CLSTM_Autoencoder.py` Custom Convolutional Bidirectional LSTM Autoencoder (Hybrid Classifier & Novelty Detection)
+    - `ConvLSTM_Classifier.py` Custom Convolutional LSTM Classifier
+    - `Convolutional_Autoencoder.py` Custom Convolutional Autoencoder for Novelty Detection
+    - `Convolutional_Classifier.py` Convolutional Neural Network with/without Attention Classifier
+    - `Convolutional_Classifier_Autoencoder.py` Custom Convolutional Classifier with Autoencoder (Hybrid Classifier & Novelty Detection)
+    - `GRU_Classifier.py` Custom GRU Classifier
+    - `RandomForest_Classifier.py` Custom Random Forest Classifier (Baseline)
+    - `Transformer_Classifier.py` Custom Transformer Classifier (Not reported)
+    - `Visualization.py` Basic class to visualise the results of the classifier and novelty detector
 
 -  TrajectoryRegression
-    - `CLSTM_Regressor.py`
-    - `CNN_Regressor.py`
-    - `LSTM_Regressor.py`
-    - `Linear_Regressor.py`
-    - `MoE.py`
-    - `Visualization.py`
+    - `CLSTM_Regressor.py` Custom Multi Input Convolutional Bidirectional LSTM Regressor
+    - `CNN_Regressor.py` Custom Multi Input Convolutional Neural Network Regressor 
+    - `LSTM_Regressor.py` Custom Multi Input LSTM Regressor
+    - `Linear_Regressor.py` Custom Multi Input Linear Regressor
+    - `MoE.py` Custom Mixture of Experts Network based on `CNN_Regressor.py` 
+    - `Visualization.py` Basic class to visualise the results of the regression models and trajectory bounds
+
+## Usage
+1. Run the notebook `Synthetic_Data_Generation.ipynb` to generate synthetic data from `ResearchData`.
+2. Use the notebook `Classifiers.ipynb` to train the trajectory intention classifiers. Follow the comments to obtain the results reported in the research.
+3. Use the notebook `RegressionModels.ipynb` to train the trajectory intention regression models. Follow the comments to obtain the results reported in the research.
+4. Run `Reservoir.m` to obtain the trajectory prediction results.
+5. Run `DMD.m` to obtain linear representations of the drone dynamics and trajectory tracking.
+6. Run `Model_based_Objective.m` to infer the reward function of drone's linear model. 

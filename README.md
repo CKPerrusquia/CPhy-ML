@@ -23,8 +23,8 @@ This repository provides the data and code of the paper "Uncovering Drone Intent
   - `Simulator.py` Simulate flights in accordance with the location of the radar and noise intensity.
   - `Standardiser.py` Basic class to transform the input trajectories into adequate input data.
 -  HybridClassifier
-  - `Attention_Layer.py`
-  - `CLSTM_Attention_Classifier.py`
+-     `Attention_Layer.py`
+  `CLSTM_Attention_Classifier.py`
   - `CLSTM_Autoencoder.py`
   - `ConvLSTM_Classifier.py`
   - `Convolutional_Autoencoder.py`

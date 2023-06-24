@@ -40,6 +40,7 @@ class Results:
         plt.xlabel("Predicted", weight="bold")
         plt.ylabel("Actual", weight="bold")
         plt.grid()
+        plt.savefig('confusion.eps', format='eps', bbox_inches = 'tight', dpi=1200)
         plt.show()
         return
     

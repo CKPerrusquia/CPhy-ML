@@ -1,7 +1,7 @@
 # Uncovering Drone Intention using Control Physics Informed Machine Learning
 This repository provides the data and code of the paper "Uncovering Drone Intentions using Control Physics Informed Machine Learning" 
 
-![imagen](https://github.com/CKPerrusquia/Drone_Intention/assets/100733638/c0297c59-0b2e-4b33-bc2d-ee6be1d8a65d)
+![imagen](https://github.com/CKPerrusquia/CPhy-ML/assets/100733638/646939d2-0703-4ca4-85a6-da5c02116f37)
 
 ## Requirements
 - python 3.9.0

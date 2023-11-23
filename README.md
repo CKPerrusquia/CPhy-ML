@@ -63,4 +63,4 @@ The `Matlab_ResearchData`contains custom flight data using a personal use drone.
 3. Use the notebook `RegressionModels.ipynb` to train the trajectory intention regression models. Follow the comments to obtain the results reported in the research.
 4. Run `Reservoir.m` to obtain the trajectory prediction results.
 5. Run `DMD.m` to obtain linear representations of the drone dynamics and trajectory tracking.
-6. Run `Model_based_Objective.m` to infer the reward function of drone's linear model. 
+6. Run `Model_based_Objective.m` to infer the reward function of drone's linear model using the reward-shaping IRL. Run `Gradient_IRL.m` to infer the reward function of drone's linear model using gradient IRL. Run `Unrestricted_IRL.m` to infer the reward function of drone's linear model using the unrestricted IRL. 
